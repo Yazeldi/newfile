@@ -1,0 +1,839 @@
+.header
+	min-height: 68px
+	padding: 31px 0 37px 0
+	+lg
+		display: none
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__main
+		position: absolute
+		top: 31px
+		font-style: italic
+		font-weight: 600
+		font-size: 26px
+		color: #3E3E3E
+		+xxl
+			//font-size: 22px
+			///left: 50px
+	&__text
+		position: absolute
+		top: 72px
+		font-weight: 500
+		font-size: 18px
+		color: #5F5F5F
+		+xxl
+			//font-size: 15px
+			//left: 50px
+	&__list
+		position: absolute
+		margin-left: 359px
+		top: 34px
+		font-weight: 500
+		font-size: 18px
+		line-height: 33px
+		color: #5F5F5F
+		+xxl
+			margin-left: 320px
+		+xl
+			display: none
+	&__phone
+		position: absolute
+		top: 50px
+		margin-left: 1498px
+		font-family: Avenir NextCyr
+		font-style: normal
+		font-weight: 750
+		font-size: 24px
+		color: #3E3E3E
+		cursor: pointer
+		+xxl
+			margin-left: 1150px
+		+xl
+			left: -173px
+		a
+			color: #000
+			margin-left: 10px
+	&__logo
+		position: absolute
+		top: 41px
+		margin-left: 1296px
+		background: url(../img/backset.svg)
+		width: 54px
+		height: 54px
+		cursor: pointer
+		+xxl
+			margin-left: 810px
+		+xl
+			margin-left: 810px
+		&:hover
+			color: #fb0707
+			fill: #fb0707
+	&__logo2
+		margin-top: 10px
+		margin-left: 1373px
+		background: url(../img/favorite.svg)
+		width: 54px
+		height: 54px
+		cursor: pointer
+		+xxl
+			margin-left: 1075px
+		+xl
+			margin-left: 880px
+.menu
+	padding: 31px
+	position: relative
+	height: 83px
+	background: #3E3E3E
+	max-width: 1920px
+	margin: 0 auto
+	+xxl
+		width: 100%
+	+xl
+		width: 100%
+	+lg 
+		width: 100%
+	//+md 
+		//width: 100%
+	.list
+		display: flex
+		align-items: center
+		margin-left: 140px
+		
+		+lg
+			//position: fixed
+			position: absolute
+			flex-direction: column
+			justify-content: center
+			margin: 0
+			line-height: 70px
+			top: 0
+			//right: 0
+			left: -100%
+			width: 50%
+			height: 100vh
+			padding: 20px 15px
+			z-index: 1
+			background-color: rgba(0,0,0, .8)
+			transition: 0.6s all
+			&_item
+			+lg 
+				padding-right: 0
+				border: none
+			+md 
+				padding: 0
+				height: 450px
+			&_active
+				left: 0
+	.hamburger
+		display: none
+		+lg 
+			display: block
+			position: absolute
+			right: 20px
+			top: 50%
+			transform: translateY(-50%)
+			width: 30px
+			height: 20px
+			span
+				display: block
+				height: 4px
+				width: 100%
+				background-color: #fff
+				margin-bottom: 4px
+				transform: 0.5s all 
+			&_active
+				span
+					margin-bottom: -4px
+					&:nth-child(1)
+						transform: translateY(3px) rotate(-45deg)
+					&:nth-child(2)
+						display: none
+					&:nth-child(3)
+						transform: translateY(3px) rotate(45deg)
+				
+	&__item
+		margin-left: 125px
+		+xxl
+			margin-left: 90px
+		+xl
+			margin-left: 75px
+		+lg 
+			padding-right: 0
+			border: none
+	&__link
+		font-weight: 500
+		font-size: 18px
+		line-height: 152%
+		color: #8E8E8E
+		+xxl
+			font-size: 15px
+		+xl
+			font-size: 11px
+		+lg 
+			font-size: 20px
+			margin-right: 100px
+		&:hover
+			color: #fff
+		&--grey-btn
+			position: absolute
+			left: 100px
+			top: 9px
+			padding: 22px 44px
+			width: 262px
+			height: 65px
+			background: #535353
+			border-radius: 5px
+			+xxl
+				left: 75px
+			+xl
+				left: 20px
+			+lg 
+				display: none
+	&__icon
+		&-wrap
+			width: 20px
+			height: 20px
+			margin-right: 7px
+	
+.banner
+	padding-top: 36px
+	&__content
+		position: relative
+		width: 1720px
+		height: 593px
+		margin: 0 auto
+		background: linear-gradient(95.65deg, #FF5E5E 0%, #FF8080 100%)
+		border-radius: 30px
+		padding: 181px 43px
+		+xxl
+			width: 100%
+	&__delivery
+		position: absolute
+		top: 175px 
+		font-weight: 300
+		font-size: 18px
+		color: rgba(255, 255, 255, 0.4)
+	&__title
+		position: absolute
+		padding-top: 15px
+		height: 128px
+		font-weight: 600
+		font-size: 48px
+		line-height: 132.5%
+		color: #FFFFFF
+		&:hover
+			color: #f1cbcb
+		+xxl
+			font-size: 45px
+		+xl
+			font-size: 32px
+	&__navigate
+		position: absolute
+		top: 540px
+		left: 65px
+		width: 26.45px
+		height: 10px
+		background: #FFFFFF
+		border-radius: 27.3608px
+		cursor: pointer
+		border: none
+		&:focus
+			outline: none
+		&:hover
+			background-color: $c3
+	&__transition
+		position: absolute
+		top: 540px
+		left: 97px
+		width: 10px
+		height: 10px
+		border: none
+		border-radius: 100%
+		background: #FFFFFF
+		cursor: pointer
+		&:focus
+			outline: none
+		&:hover
+			background-color: $c3
+	&__icons
+		position: absolute
+		top: 540px
+		left: 113px
+		width: 10px
+		height: 10px
+		border: none
+		border-radius: 100%
+		background: #FFFFFF
+		cursor: pointer
+		&:focus
+			outline: none
+		&:hover
+			background-color: $c3
+	&__desrc
+		position: absolute
+		top: 540px
+		left: 129px
+		width: 10px
+		height: 10px
+		border: none
+		border-radius: 100%
+		background: #FFFFFF
+		cursor: pointer
+		&:focus
+			outline: none
+		&:hover
+			background-color: $c3
+	&__auto
+		position: absolute
+		width: 624px
+		height: 372px
+		background: url(../img/auto.png)
+		right: 121px
+		top: 111px
+		+lg 
+			width: 545px
+			right: 0
+			top: 125px
+	&__the-box
+		position: absolute
+		width: 100px
+		height: 100px
+		right: 30px
+		top: 46px
+		background: url(../img/grup.png)
+		filter: blur(0.5px)
+		+lg 
+			display: none
+	&__the-box1
+		position: absolute
+		width: 179px
+		height: 170px
+		left: 865px
+		top: 170px
+		background: url(../img/Grup1.png)
+		+lg 
+			display: none
+	&__the-box2
+		position: absolute
+		width: 265px
+		height: 144px
+		right: 20px
+		top: 448px
+		background: url(../img/grup3.png)
+		+lg 
+			display: none
+.catalog
+	min-height: 653px
+	padding-top: 68px
+	+xxl
+		width: 100%
+		//margin: 0
+	&__title
+		//margin-bottom: 29.41px
+
+	&__menu
+		padding-top: 29px
+		display: flex
+		justify-content: space-between
+		+xxl
+			flex-wrap: wrap
+		+md 
+			justify-content: center
+
+	&__columns
+		width: 408px
+		height: 578px
+		background: #FFFFFF
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02)
+		border-radius: 30px
+		padding: 40px 55px 43px 56px
+		+xxl
+			margin-bottom: 20px
+
+	&__photo
+		width: 296px
+		height: 296px
+		display: flex
+		+xxl
+			//margin: 0 auto
+	&__tobacco-products
+		padding-top: 40px
+		font-weight: 600
+		font-size: 22px
+		line-height: 25px
+		color: #3E3E3E
+		text-align: center
+	&__text
+		padding-top: 10px
+		font-weight: 400
+		font-size: 16px
+		line-height: 152%
+		text-align: center
+		color: #3E3E3E
+.title
+	font-weight: 600
+	font-size: 30px
+	line-height: 152%
+	color: #3E3E3E
+
+.nev-catalog
+	min-height: 664px
+	margin: 72px 0
+	+xxl
+		width: 100%
+	&__row
+		padding-top: 30px
+		display: flex
+		justify-content: space-between
+		+xxl
+			flex-wrap: wrap
+		+md 
+			justify-content: center
+	&__columns
+		min-width: 408px
+		min-height: 578px
+		background: #FFFFFF
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02)
+		border-radius: 30px
+		padding: 32px 0 33px 0
+		+xxl
+			margin-bottom: 20px
+	&__icon
+		position: absolute
+		margin-left: 352px
+	&__logo
+		position: absolute
+		margin-left: 352px
+	&__photo
+		position: absolute
+		padding-top: 43px
+		margin-left: 70px
+		width: 269px
+		height: 307px
+	&__name
+		position: absolute
+		padding-top: 355px
+		padding-left: 164px
+		font-weight: 600
+		font-size: 22px
+		line-height: 152%
+		color: #3E3E3E
+	.name--shop
+		padding-left: 127px
+	&__text
+		position: absolute
+		padding-top: 388px
+		padding-left: 130px
+		font-weight: 400
+		font-size: 16px
+		line-height: 152%
+		color: #3E3E3E
+	&__price
+		position: absolute
+		padding-top: 453px
+		margin-left: 35px
+		font-weight: 700
+		font-size: 28px
+		line-height: 152%
+		color: #3E3E3E
+	&__cost
+		position: absolute
+		padding-top: 491px
+		margin-left: 35px
+		font-weight: 400
+		font-size: 14px
+		line-height: 110%
+		color: #C0BFBF
+
+.map
+	height: 686px
+	.title
+	&__google
+		margin-top: 32px
+		position: absolute
+		+xxl
+			iframe
+				width: 100%
+				margin-left: -93px
+		+xl
+			iframe
+				width: 100%
+		+lg
+			iframe
+				width: 1069px
+		+md 
+			iframe
+				width: 843px
+				height: 400px
+	&__rectangle
+		position: absolute
+		top: 227px
+		left: 595px
+		width: 239px
+		height: 118px
+		background: #FFFFFF
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 04)
+		border-radius: 10px
+		text-align: center
+		a
+			color: $c0
+		+xxl
+			left: 150px
+		+md 
+			top: 20px
+	&__item
+		padding: 20px 0 0 0
+		font-weight: 700
+	&__vector
+		position: absolute
+		bottom: 295px
+		left: 835px
+		+xxl
+			left: 395px
+	&__link
+		font-weight: 500
+		font-size: 14px
+	&__phone
+		font-weight: 500
+		font-size: 14px
+
+.footer
+	position: relative
+	width: 1920px
+	min-height: 285px
+	background-color: #3E3E3E
+	margin: 0 auto
+	margin-top: 140px
+	+xxl
+		width: 100%
+	+xl
+		width: 100%
+	+lg
+		width: 100%
+		min-height: 150px
+	+md 
+		width: 100%
+		margin-top: -130px
+	&__vector
+		display: flex 
+		
+		+lg
+			//position: absolute
+			flex-direction: column
+			//justify-content: center
+			align-items: center
+			//background-color: #3E3E3E
+	&__menu
+		padding: 54px 0 0 100px
+		margin: 0
+		+lg 
+			padding: 0
+	&__item
+		font-family: 'Poppins'
+		font-style: italic
+		font-weight: 600
+		font-size: 30px
+		color: #FFFFFF
+		+xxl
+			font-size: 27px
+			margin-left: -75px
+		+lg 
+			font-size: 20px
+			position: absolute
+			left: 100px
+			top: 30px
+	&__name
+		font-weight: 500
+		font-size: 18px
+		color: #5F5F5F
+		margin-top: 5px
+		+xxl
+			margin-left: -75px
+			font-size: 17px
+		+lg 
+			position: absolute
+			left: 80px
+			font-size: 12px
+	&__link
+		margin-top: 10px
+		width: 272px
+		font-weight: 300
+		font-size: 15px
+		color: #929292
+		+xxl
+			margin-left: -75px
+		+lg 
+			position: absolute
+			left: 80px
+			top: 55px
+			a
+				+lg 
+					margin-left: 10px
+	&__line
+		position: absolute
+		width: 208px
+		height: 0px
+		margin-left: 255px
+		bottom: 140px
+		border: 1.5px solid #494949
+		transform: rotate(90deg)
+		+xxl
+			margin-left: 145px
+		+lg 
+			display: none
+	&__label
+		font-weight: 600
+		font-size: 22px
+		color: #FFFFFF
+		+xxl
+			font-size: 19px
+			margin-left: -2px
+		+lg 
+	.label_catalog
+		+lg 
+			position: absolute
+			left: 300px
+			top: 30px
+	.label_sections
+		+lg 
+			position: absolute
+			top: 30px
+			left: 500px
+		+md 
+			display: none
+	.label_online
+		+lg 
+			display: none
+	.label_contact
+		+lg 
+			position: absolute
+			top: 30px
+			left: 800px
+		+md 
+			left: 575px
+	&__vector
+		padding-top: 10px
+		height: 66px
+		font-weight: 300
+		font-size: 15px
+		color: #929292
+		a
+			color: #929292
+		+xxl
+			font-size: 14px
+	.vector-tobacco
+		+lg 
+			position: absolute
+			left: 10px
+			font-size: 10px
+	.vector-lg
+		+lg 
+			position: absolute
+			left: 10px
+			font-size: 10px
+	&__pulse
+		margin-left: 55px
+		font-weight: 300
+		font-size: 15px
+		color: #929292
+		a
+			color: #929292
+	.pulse-charcoal 
+		+lg 
+			position: absolute
+			left: 30px
+			font-size: 10px
+	&__nets
+		margin-top: 10px
+		a
+			margin-right: 20px
+		+xxl
+			img
+				margin-bottom: 10px
+	&__land
+		position: absolute
+		left: 1090px
+		width: 208px
+		height: 0px
+		bottom: 140px
+		border: 1.5px solid #494949
+		transform: rotate(90deg)
+		+xxl
+			left: 820px
+		+lg 
+			display: none
+	&__star
+		position: absolute
+		width: 208px
+		height: 0px
+		bottom: 140px
+		margin-left: 50px
+		border: 1.5px solid #494949
+		transform: rotate(90deg)
+		+lg 
+			display: none
+	&__contact
+		display: flex
+		align-items: center
+	&__icons
+		position: absolute
+		width: 22px
+		height: 22px
+		top: 98px
+		+lg
+			display: none
+	&__phone
+		position: absolute
+		top: 110px
+		padding-left: 30px
+		font-weight: 300
+		font-size: 15px
+		color: #929292
+		+xxl
+			top: 97px
+		a
+			padding-left: 10px
+			color: #929292
+		+lg
+			display: none
+	&__email
+		position: absolute
+		top: 126px
+		width: 22px
+		height: 22px
+		+lg
+			display: none
+	&__main
+		display: flex
+		align-items: center
+		padding-top: 13px
+		+xxl
+			margin-left: 0px
+	&__icon
+		position: absolute
+		top: 135px
+		padding-left: 35px
+		font-weight: 300
+		font-size: 14px
+		a
+			padding-left: 10px
+			color: #929292
+		+lg
+			display: none
+	&__vectori
+		font-weight: 300
+		position: absolute
+		top: 165px
+		line-height: 33px
+		font-size: 15px
+		line-height: 219%
+		color: #929292
+		+xxl
+			margin-left: 0px
+		ul
+			font-size: 13px
+			line-height: 12px
+			padding-top: 7px
+		+lg 
+			position: absolute
+			top: 10px
+			left: 10px
+			ul
+				+lg 
+					font-size: 10px
+					display: -webkit-box
+					line-height: 13px
+					position: absolute
+					top: 35px
+					left: -54px
+	&__site-map
+		position: absolute
+		top: 220px
+		text-decoration: underline
+		font-weight: 600
+		font-size: 15px
+		line-height: 33px
+		cursor: pointer
+		a
+			color: #929292
+		+lg 
+			position: absolute
+			top: 85px
+			right: -70px
+			font-size: 11px
+
+.footer-info
+	width: 1920px
+	height: 49px
+	background: #363434
+	margin: 0 auto
+	+xxl
+		width: 100%
+	+xl
+		width: 100%
+	+lg
+		width: 100%
+	&__info
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 10.65px 100px 12px
+		a
+			color: #808080
+		+lg 
+			font-size: 13px
+		+md 
+			font-size: 11px
+			padding: 10.65px 25px 12px
+	&__basement
+		font-weight: 400
+		font-size: 13px
+		a
+			font-weight: 400
+			font-size: 13px
+			text-decoration-line: underline
+		&:hover
+			color: #fff
+ 
+			font-size: 10px
+	&__vector
+		display: flex
+	&__logo
+		position: absolute
+		margin-left: 275px
+	&__icon
+		width: 269px
+		height: 307px
+		margin: 43px 0 0 0
+		display: flex
+	&__title
+		padding-top: 17px
+		text-align: center
+		font-weight: 600
+		font-size: 22px
+		color: #3E3E3E
+	&__text
+		padding-top: 5px
+		font-weight: 400
+		font-size: 16px
+		line-height: 152%
+		margin-left: 60px
+		color: #3E3E3E
+	&__subtitle
+		position: absolute
+		display: flex
+	&__price
+		padding-top: 30px
+		margin-left: -35px
+		font-weight: 700
+		font-size: 28px
+		line-height: 152%
+		color: #3E3E3E
+	&__cost
+		position: absolute
+		font-weight: 400
+		font-size: 14px
+		line-height: 110%
+		color: #C0BFBF
