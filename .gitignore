@@ -15,5 +15,5 @@ app/js/libs.min.js
 app/js/main.min.js
 
 # html
-//app/*.html
+app/*.html
 
