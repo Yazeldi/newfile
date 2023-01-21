@@ -8,12 +8,12 @@ node_modules/
 .npm
 
 # Css files
-app/css/
+.css
 
 # files
 app/js/libs.min.js
 app/js/main.min.js
 
 # html
-app/*.html
+
 
